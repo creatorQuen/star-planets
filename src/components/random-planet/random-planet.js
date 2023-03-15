@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import StarWarsService from '../../services/swapi-service';
+import Spinner from '../spinner'
 
 import './random-planet.css';
 
@@ -30,7 +31,7 @@ onPlanetLoaded = (planet) => {
   
   render() {
     const { planet: { id, name, population, rotationPeriod, diameter } } = this.state;
-
+    return <Spinner />
     return (
       <div className="random-planet jumbotron rounded">
         <img className="planet-image"
