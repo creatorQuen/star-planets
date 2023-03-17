@@ -1,0 +1,17 @@
+.error-indicator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+}
+
+.error-indicator img {
+  margin-bottom: 1rem;
+  width: 200px;
+  height: auto;
+}
+
+.error-indicator .lethal-error {
+  font-size: 1.7rem;
+}
